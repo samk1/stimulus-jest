@@ -2,9 +2,10 @@
   "name": "@samkidman/stimulus-jest",
   "version": "1.0.0",
   "description": "Helpers for testing stimulus controllers with jest",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "babel src --out-dir lib"
   },
   "keywords": [
     "jest",
@@ -29,13 +30,14 @@
     "stimulus": "^1.1.1"
   },
   "devDependencies": {
-    "mutationobserver-shim": "^0.3.7",
+    "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.1",
     "@babel/plugin-transform-runtime": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
     "babel-jest": "^26.2.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "jest": "^26.2.2",
-    "jest-cli": "^26.2.2"
+    "jest-cli": "^26.2.2",
+    "mutationobserver-shim": "^0.3.7"
   }
 }
