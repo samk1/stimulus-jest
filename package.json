@@ -1,5 +1,5 @@
 {
-  "name": "stimulus-jest",
+  "name": "@samkidman/stimulus-jest",
   "version": "1.0.0",
   "description": "Helpers for testing stimulus controllers with jest",
   "main": "index.js",
@@ -11,8 +11,19 @@
     "stimulus",
     "testing"
   ],
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samk1/stimulus-jest.git"
+  },
   "author": "Sam Kidman",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samk1/stimulus-jest/issues"
+  },
+  "homepage": "https://github.com/samk1/stimulus-jest#readme",
   "dependencies": {
     "pretty": "^2.0.0",
     "stimulus": "^1.1.1"
