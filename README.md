@@ -7,7 +7,7 @@ This package provides some helper functions for testing stimulus controllers.
 Install these packages:
 
 ```
-yarn add --dev mutationobserver-shim @babel/core @babel/plugin-transform-runtime @babel/preset-env babel-jest babel-plugin-transform-class-properties
+yarn add --dev mutationobserver-shim @babel/core @babel/plugin-transform-runtime @babel/preset-env babel-jest
 ```
 
 Add this to your jestSetup.js. Stimulus uses the mutation observer API and jsdom doesn't currently support this.
@@ -23,7 +23,7 @@ Finally, make sure you've configured babel:
 //.babelrc
 {
   "plugins": [
-    "transform-class-properties",
+    "@babel/plugin-proposal-class-properties",
     "@babel/plugin-transform-runtime"
   ],
   "presets": [
